@@ -116,7 +116,7 @@ transform: scale(2);
 }
 
 
-/* slider */
+/* slider - DISABLED UNTIL I KNOW JS
 .slider {
     -webkit-appearance: none;
     width: 75%;
@@ -133,6 +133,7 @@ transform: scale(2);
     background: #00CE79;
     cursor:pointer;
   }
+*/
 
   /* button styling */
   button {
@@ -153,16 +154,19 @@ transform: scale(2);
         font-size: 5em;
     }
     p, label {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     legend {
-        font-size: 2rem;
+        font-size: 1.4rem;
+    }
+    input {
+        font-size: 1.4rem; 
     }
     #description-box {
         max-width: 60rem;
     }
     #dropdown {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     #main-form {
         max-width: 50rem;
