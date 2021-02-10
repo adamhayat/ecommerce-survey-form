@@ -176,7 +176,7 @@ input[type='checkbox'], input[type='radio'] {
       font-size: 18px;
   }
 
-  
+/* Responsive Features */  
   @media (max-width: 840px) {
       #main-form {
           max-width: 80%;
