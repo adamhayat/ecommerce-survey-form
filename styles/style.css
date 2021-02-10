@@ -177,12 +177,16 @@ input[type='checkbox'], input[type='radio'] {
   }
 
   
-  @media (max-width: 700px) {
+  @media (max-width: 840px) {
       #main-form {
           max-width: 80%;
       }
       .slider {
-          width: 87%;
+          width: 75%;
+          margin-top: 2vw;
+      }
+      p, label, legend, input, #dropdown, textarea {
+          font-size: 22px;
       }
   }
 
