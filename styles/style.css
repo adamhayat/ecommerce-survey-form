@@ -1,6 +1,7 @@
 body {
     font-family: 'Lexend Mega', sans-serif;
     color: white;
+    outline: none;
 }
 
 /* background */
@@ -30,81 +31,70 @@ h1 {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 0px;
-    letter-spacing: .5px;
+    letter-spacing: .03em;
 }
 
 /* text formatting */
 p, label {
-    font-size: 18px;
+    font-size: 3vw;
     color: white;
     text-align: center;
-    letter-spacing: 0px;
-    line-height: 28px;
 }
 
 /* legend for fieldset */
 legend {
-    font-size: 18px;
-    color: white;
-    letter-spacing: 0.px;
-    line-height: 28px;
-    max-width: 80%;
+    font-size: 3vw;
+    margin-bottom: 1rem;
 }
 
 /* description box */
 #description-box {
-    max-width: 800px;
+    max-width: 80vw;
     margin: 0px auto 50px auto;
 }
 
 /* Placeholder styling */
 #dropdown {
-    color: gray;
-    width: 100%;
-    height: 3.3rem;
-    font-size: 18px;
+    font-size: 4vw;
 }
 
 /* Placeholder size */
 textarea, input {
-    font-size: 18px;
-    outline: none;
+    font-size: 1.8rem;
 }
 
 
 /* Form area styling */
 #main-form {
-width: 47rem;
+max-width: 85vw;
 margin: 30px auto 30px auto;
 padding: 40px;
 background-color: rgba(0,0,0,.7);
-opacity: 1;
+opacity: 0.9;
 border-radius: 6px;
 }
 
 
 /* Form cell formatting */
 .form-group {
-margin: 40px 0px 10px 0px;
+margin: 2rem 0 2.5rem 0;
 }
 
 
 /* input field styling */
 .input-field, #dropdown {
     margin: 7px 0px 0px 0px;
-    border: 1px solid #000;
-    border-radius: 8px;
+    border-radius: 6px;
     display: block;
     width: 96%;
-    height: 2.375rem;
-    padding: 0.375rem 0.75rem;
-    outline: none;
+    height: 4rem;
+    padding: 0.475rem .75rem;
 }
 
 /* change textarea style */
 #textarea-comments {
     height: 7rem;
-    padding: 15px;
+    padding: 0.75rem;
 }
 
 /* fieldset styling */
@@ -121,47 +111,28 @@ fieldset {
 
 /* Radio button styling */
 input[type='checkbox'], input[type='radio'] {
-    zoom: 1.3;
-    transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    margin: 8px;
+transform: scale(2);
+    margin: 18px;
 }
 
 
 /* slider */
 .slider {
     -webkit-appearance: none;
-    width: 93%;
-    height: 15px;
-    border-radius: 5px; 
-    outline: none;
-    opacity: 0.92;
+    width: 75%;
+    height: 2rem;
+    border-radius: 6px; 
+    margin-top: 23px;
   }
   
   .slider::-webkit-slider-thumb {
     appearance: none;
     width: 25px;
     height: 25px;
-    border-radius: 50%; 
+    border-radius: 18%; 
     background: #00CE79;
     cursor:pointer;
   }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #00CE79;
-  }
-
 
   /* button styling */
   button {
@@ -176,8 +147,32 @@ input[type='checkbox'], input[type='radio'] {
       font-size: 18px;
   }
 
-/* Responsive Features */  
-  @media (max-width: 840px) {
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 5em;
+    }
+    p, label {
+        font-size: 2rem;
+    }
+    legend {
+        font-size: 2rem;
+    }
+    #description-box {
+        max-width: 60rem;
+    }
+    #dropdown {
+        font-size: 2rem;
+    }
+    #main-form {
+        max-width: 50rem;
+    }
+}
+
+
+
+/* Responsive Features OLD
+  @media (max-width: 500px) {
       #main-form {
           max-width: 80%;
       }
@@ -189,4 +184,4 @@ input[type='checkbox'], input[type='radio'] {
           font-size: 22px;
       }
   }
-
+*/
